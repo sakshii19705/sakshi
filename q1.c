@@ -1,14 +1,35 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
+
 {
-        int i,j;
-        for(i=41;j<=45;i++)
+    int size,i;
+
+    printf("enter the array's size: ");
+    scanf("%d",&size);
+
+    int arr[size];
+
+    printf("enter array's elements:\n");
+    for(i=0; i < size; i++)
+    {
+        printf("a[%d] = , i");
+        scanf("%d",&arr[i]);
+    }
+
+    printf("negative elements from an array:");
+    for(i=0; i < size ; i++)
+    {
+        if(arr[i] < 0)
         {
-            for(j=41;j<=i;j++)
-            {
-                printf("%d ",j);
-            }
-            printf("\n");
+            printf("%d", arr[i]);
         }
+    }
+    printf("\n");
+
+    return 0;
+
 }
+
+   
+    
